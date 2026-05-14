@@ -507,13 +507,18 @@ function ProjectCard({ project, index, onSelect }: { project: Project, index: nu
 function ProjectDetailsModal({ project, onClose }: { project: any, onClose: () => void }) {
   const [isPlaying, setIsPlaying] = React.useState(false);
 
-  const getEmbedUrl = (url: string) => {
+  // Function to ensure the YouTube URL is in the correct embed format
+  const getSafeVideoUrl = (url: string) => {
     if (!url || url === "#") return "";
-    if (url.includes("youtube.com/embed/")) {
-      const connector = url.includes('?') ? '&' : '?';
-      return `${url}${connector}autoplay=1&mute=0&rel=0&modestbranding=1&showinfo=0`;
+    let embedUrl = url;
+    
+    // Convert watch link to embed link if necessary
+    if (url.includes("watch?v=")) {
+      embedUrl = url.replace("watch?v=", "embed/");
     }
-    return url;
+    
+    const connector = embedUrl.includes('?') ? '&' : '?';
+    return `${embedUrl}${connector}autoplay=1&mute=0&rel=0&modestbranding=1`;
   };
 
   return (
@@ -529,7 +534,7 @@ function ProjectDetailsModal({ project, onClose }: { project: any, onClose: () =
         initial={{ opacity: 0, scale: 0.9, y: 20 }}
         animate={{ opacity: 1, scale: 1, y: 0 }}
         exit={{ opacity: 0, scale: 0.9, y: 20 }}
-        className="relative w-full max-w-6xl glass rounded-2xl overflow-hidden flex flex-col md:flex-row shadow-[0_0_100px_rgba(0,0,0,0.5)]"
+        className="relative w-full max-w-6xl glass rounded-2xl overflow-hidden flex flex-col md:flex-row shadow-2xl h-fit max-h-[90vh]"
       >
         <button
           onClick={onClose}
@@ -539,9 +544,9 @@ function ProjectDetailsModal({ project, onClose }: { project: any, onClose: () =
         </button>
 
         {/* Media Side */}
-        <div className="w-full md:w-2/3 aspect-video md:aspect-auto relative group overflow-hidden bg-black flex items-center justify-center">
+        <div className="w-full md:w-2/3 aspect-video relative bg-black flex items-center justify-center overflow-hidden">
           {!isPlaying ? (
-            <>
+            <div className="relative w-full h-full group">
               <img 
                 src={project.image} 
                 alt={project.title} 
@@ -551,28 +556,17 @@ function ProjectDetailsModal({ project, onClose }: { project: any, onClose: () =
                 <motion.button
                   whileHover={{ scale: 1.1 }}
                   onClick={() => setIsPlaying(true)}
-                  className="w-24 h-24 rounded-full bg-brand-cyan flex items-center justify-center text-brand-black glow-cyan translate-y-4 group-hover:translate-y-0 opacity-0 group-hover:opacity-100 transition-all duration-500 z-10"
+                  className="w-20 h-20 md:w-24 md:h-24 rounded-full bg-brand-cyan flex items-center justify-center text-brand-black glow-cyan z-10 transition-all"
                 >
                   <Play size={32} fill="currentColor" className="ml-1" />
                 </motion.button>
               </div>
-              <div className="absolute bottom-0 left-0 w-full p-8 bg-gradient-to-t from-brand-black to-transparent pointer-events-none">
-                <div className="flex gap-4 items-center">
-                  <div className="flex items-center gap-2 text-xs text-brand-cyan font-bold uppercase tracking-widest">
-                    <Clock size={14} /> {project.duration}
-                  </div>
-                  <div className="w-1 h-1 rounded-full bg-white/20" />
-                  <div className="flex items-center gap-2 text-xs text-white/60 font-bold uppercase tracking-widest">
-                    <Video size={14} /> 4K 60FPS
-                  </div>
-                </div>
-              </div>
-            </>
+            </div>
           ) : (
             <iframe
-              src={getEmbedUrl(project.videoUrl)}
-              title={project.title}
-              className="w-full h-full absolute inset-0 z-20"
+              src={getSafeVideoUrl(project.videoUrl)}
+              title="Project Video"
+              className="absolute inset-0 w-full h-full z-20"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowFullScreen
               frameBorder="0"
@@ -581,43 +575,36 @@ function ProjectDetailsModal({ project, onClose }: { project: any, onClose: () =
         </div>
 
         {/* Info Side */}
-        <div className="w-full md:w-1/3 p-8 md:p-12 flex flex-col overflow-y-auto max-h-[500px] md:max-h-none bg-brand-black/50">
-          <span className={`text-[10px] font-bold uppercase tracking-[0.4em] mb-4 ${project.accent === 'brand-cyan' ? 'text-brand-cyan' : 'text-brand-crimson'}`}>
+        <div className="w-full md:w-1/3 p-6 md:p-10 flex flex-col overflow-y-auto bg-brand-black/40 backdrop-blur-sm">
+          <span className="text-[10px] font-bold uppercase tracking-[0.4em] mb-3 text-brand-cyan">
             {project.category}
           </span>
-          <h2 className="text-4xl font-bold text-white mb-6 leading-tight">{project.title}</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 leading-tight">{project.title}</h2>
 
-          <div className="space-y-6 mb-12">
-            <div className="flex items-center justify-between py-4 border-b border-white/5">
-              <div className="flex items-center gap-3 text-muted-gray text-xs uppercase tracking-widest">
-                <User size={14} /> Client
-              </div>
-              <span className="text-white text-sm font-medium">{project.client}</span>
+          <div className="space-y-4 mb-8">
+            <div className="flex items-center justify-between py-3 border-b border-white/5 text-xs">
+              <span className="text-muted-gray uppercase tracking-widest flex items-center gap-2"><User size={12}/> Client</span>
+              <span className="text-white font-medium">{project.client}</span>
             </div>
-            <div className="flex items-center justify-between py-4 border-b border-white/5">
-              <div className="flex items-center gap-3 text-muted-gray text-xs uppercase tracking-widest">
-                <Calendar size={14} /> Year
-              </div>
-              <span className="text-white text-sm font-medium">{project.year}</span>
+            <div className="flex items-center justify-between py-3 border-b border-white/5 text-xs">
+              <span className="text-muted-gray uppercase tracking-widest flex items-center gap-2"><Calendar size={12}/> Year</span>
+              <span className="text-white font-medium">{project.year}</span>
             </div>
           </div>
 
-          <div className="mb-12">
-            <h4 className="text-[10px] text-muted-gray uppercase tracking-widest font-bold mb-4">Project Brief</h4>
-            <p className="text-silver leading-relaxed font-light">
+          <div className="mb-8">
+            <h4 className="text-[10px] text-muted-gray uppercase tracking-widest font-bold mb-3">Project Brief</h4>
+            <p className="text-silver text-sm leading-relaxed font-light line-clamp-6">
               {project.fullDesc}
             </p>
           </div>
 
-          <div className="mt-auto space-y-4">
+          <div className="mt-auto space-y-3">
             <button 
               onClick={() => setIsPlaying(true)}
-              className="w-full py-4 bg-white text-brand-black font-bold uppercase tracking-widest hover:bg-brand-cyan transition-colors"
+              className="w-full py-4 bg-white text-brand-black font-bold uppercase tracking-widest hover:bg-brand-cyan transition-all text-xs"
             >
               Play Full Reel
-            </button>
-            <button className="w-full py-4 border border-white/10 text-white font-bold uppercase tracking-widest hover:bg-white/5 transition-colors">
-              Behind the Scenes
             </button>
           </div>
         </div>

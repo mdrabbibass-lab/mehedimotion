@@ -59,12 +59,12 @@ const PROJECTS: Project[] = [
     category: "Commercial",
     client: "Value Talks",
     year: "2026",
-    duration: "3:00",
-    desc: "High-octane commercial edit for Nike's latest runner series.",
+    duration: "1:25",
+    desc: "রিসোর্টে ভিজিটর আসে কিন্তু প্রফিট হয় না কেন?",
     fullDesc: "The goal was to communicate breathless speed. Using frantic jump-cuts, speed ramping, and custom foley sound design, we created a commercial that feels like a heartbeat racing at 180 BPM.",
-    image: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&q=80&w=1200",
+    image: "https://i.postimg.cc/xjP22QzL/GFJRe0Pkjhk-HD.jpg",
     accent: "brand-crimson",
-    videoUrl: "#"
+    videoUrl: "https://www.youtube.com/embed/ujeSkJvKYtk?si=Xu1wwRBqvkGFHGcz"
   },
   {
     id: "p3",

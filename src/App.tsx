@@ -504,7 +504,9 @@ function ProjectCard({ project, index, onSelect }: { project: Project, index: nu
   );
 }
 
-function ProjectDetailsModal({ project, onClose }: { project: Project, onClose: () => void }) {
+function ProjectDetailsModal({ project, onClose }: { project: any, onClose: () => void }) {
+  const [isPlaying, setIsPlaying] = React.useState(false);
+
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -513,14 +515,14 @@ function ProjectDetailsModal({ project, onClose }: { project: Project, onClose: 
       className="fixed inset-0 z-[100] flex items-center justify-center p-4 md:p-8"
     >
       <div className="absolute inset-0 bg-brand-black/95 backdrop-blur-md" onClick={onClose} />
-      
+
       <motion.div
         initial={{ opacity: 0, scale: 0.9, y: 20 }}
         animate={{ opacity: 1, scale: 1, y: 0 }}
         exit={{ opacity: 0, scale: 0.9, y: 20 }}
         className="relative w-full max-w-6xl glass rounded-2xl overflow-hidden flex flex-col md:flex-row shadow-[0_0_100px_rgba(0,0,0,0.5)]"
       >
-        <button 
+        <button
           onClick={onClose}
           className="absolute top-6 right-6 z-20 w-12 h-12 rounded-full glass flex items-center justify-center text-white hover:bg-white hover:text-brand-black transition-all"
         >
@@ -528,65 +530,88 @@ function ProjectDetailsModal({ project, onClose }: { project: Project, onClose: 
         </button>
 
         {/* Media Side */}
-        <div className="w-full md:w-2/3 aspect-video md:aspect-auto relative group">
-          <img src={project.image} alt={project.title} className="w-full h-full object-cover brightness-50" />
-          <div className="absolute inset-0 flex items-center justify-center">
-            <motion.button 
-              whileHover={{ scale: 1.1 }}
-              className="w-24 h-24 rounded-full bg-brand-cyan flex items-center justify-center text-brand-black glow-cyan translate-y-4 group-hover:translate-y-0 opacity-0 group-hover:opacity-100 transition-all duration-500"
-            >
-              <Play size={32} fill="currentColor" className="ml-1" />
-            </motion.button>
-          </div>
-          <div className="absolute bottom-0 left-0 w-full p-8 bg-gradient-to-t from-brand-black to-transparent">
-             <div className="flex gap-4 items-center">
-                <div className="flex items-center gap-2 text-xs text-brand-cyan font-bold uppercase tracking-widest">
-                   <Clock size={14} /> {project.duration}
+        <div className="w-full md:w-2/3 aspect-video md:aspect-auto relative group overflow-hidden bg-black">
+          {!isPlaying ? (
+            <>
+              <img 
+                src={project.image} 
+                alt={project.title} 
+                className="w-full h-full object-cover brightness-50" 
+              />
+              
+              <div className="absolute inset-0 flex items-center justify-center">
+                <motion.button
+                  whileHover={{ scale: 1.1 }}
+                  onClick={() => setIsPlaying(true)}
+                  className="w-24 h-24 rounded-full bg-brand-cyan flex items-center justify-center text-brand-black glow-cyan translate-y-4 group-hover:translate-y-0 opacity-0 group-hover:opacity-100 transition-all duration-500 z-10"
+                >
+                  <Play size={32} fill="currentColor" className="ml-1" />
+                </motion.button>
+              </div>
+
+              <div className="absolute bottom-0 left-0 w-full p-8 bg-gradient-to-t from-brand-black to-transparent pointer-events-none">
+                <div className="flex gap-4 items-center">
+                  <div className="flex items-center gap-2 text-xs text-brand-cyan font-bold uppercase tracking-widest">
+                    <Clock size={14} /> {project.duration}
+                  </div>
+                  <div className="w-1 h-1 rounded-full bg-white/20" />
+                  <div className="flex items-center gap-2 text-xs text-white/60 font-bold uppercase tracking-widest">
+                    <Video size={14} /> 4K 60FPS
+                  </div>
                 </div>
-                <div className="w-1 h-1 rounded-full bg-white/20" />
-                <div className="flex items-center gap-2 text-xs text-white/60 font-bold uppercase tracking-widest">
-                   <Video size={14} /> 4K 60FPS
-                </div>
-             </div>
-          </div>
+              </div>
+            </>
+          ) : (
+            <iframe
+              src={`${project.videoUrl}${project.videoUrl.includes('?') ? '&' : '?'}autoplay=1`}
+              title={project.title}
+              className="w-full h-full absolute inset-0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+              frameBorder="0"
+            ></iframe>
+          )}
         </div>
 
         {/* Info Side */}
-        <div className="w-full md:w-1/3 p-8 md:p-12 flex flex-col overflow-y-auto max-h-[500px] md:max-h-none">
+        <div className="w-full md:w-1/3 p-8 md:p-12 flex flex-col overflow-y-auto max-h-[500px] md:max-h-none bg-brand-black/50">
           <span className={`text-[10px] font-bold uppercase tracking-[0.4em] mb-4 ${project.accent === 'brand-cyan' ? 'text-brand-cyan' : 'text-brand-crimson'}`}>
             {project.category}
           </span>
           <h2 className="text-4xl font-bold text-white mb-6 leading-tight">{project.title}</h2>
-          
+
           <div className="space-y-6 mb-12">
             <div className="flex items-center justify-between py-4 border-b border-white/5">
-               <div className="flex items-center gap-3 text-muted-gray text-xs uppercase tracking-widest">
-                  <User size={14} /> Client
-               </div>
-               <span className="text-white text-sm font-medium">{project.client}</span>
+              <div className="flex items-center gap-3 text-muted-gray text-xs uppercase tracking-widest">
+                <User size={14} /> Client
+              </div>
+              <span className="text-white text-sm font-medium">{project.client}</span>
             </div>
             <div className="flex items-center justify-between py-4 border-b border-white/5">
-               <div className="flex items-center gap-3 text-muted-gray text-xs uppercase tracking-widest">
-                  <Calendar size={14} /> Year
-               </div>
-               <span className="text-white text-sm font-medium">{project.year}</span>
+              <div className="flex items-center gap-3 text-muted-gray text-xs uppercase tracking-widest">
+                <Calendar size={14} /> Year
+              </div>
+              <span className="text-white text-sm font-medium">{project.year}</span>
             </div>
           </div>
 
           <div className="mb-12">
-             <h4 className="text-[10px] text-muted-gray uppercase tracking-widest font-bold mb-4">Project Brief</h4>
-             <p className="text-silver leading-relaxed font-light">
-                {project.fullDesc}
-             </p>
+            <h4 className="text-[10px] text-muted-gray uppercase tracking-widest font-bold mb-4">Project Brief</h4>
+            <p className="text-silver leading-relaxed font-light">
+              {project.fullDesc}
+            </p>
           </div>
 
           <div className="mt-auto space-y-4">
-             <button className="w-full py-4 bg-white text-brand-black font-bold uppercase tracking-widest hover:bg-brand-cyan transition-colors">
-                Play Full Reel
-             </button>
-             <button className="w-full py-4 border border-white/10 text-white font-bold uppercase tracking-widest hover:bg-white/5 transition-colors">
-                Behind the Scenes
-             </button>
+            <button 
+              onClick={() => setIsPlaying(true)}
+              className="w-full py-4 bg-white text-brand-black font-bold uppercase tracking-widest hover:bg-brand-cyan transition-colors"
+            >
+              Play Full Reel
+            </button>
+            <button className="w-full py-4 border border-white/10 text-white font-bold uppercase tracking-widest hover:bg-white/5 transition-colors">
+              Behind the Scenes
+            </button>
           </div>
         </div>
       </motion.div>

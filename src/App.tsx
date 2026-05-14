@@ -507,6 +507,15 @@ function ProjectCard({ project, index, onSelect }: { project: Project, index: nu
 function ProjectDetailsModal({ project, onClose }: { project: any, onClose: () => void }) {
   const [isPlaying, setIsPlaying] = React.useState(false);
 
+  const getEmbedUrl = (url: string) => {
+    if (!url || url === "#") return "";
+    if (url.includes("youtube.com/embed/")) {
+      const connector = url.includes('?') ? '&' : '?';
+      return `${url}${connector}autoplay=1&mute=0&rel=0&modestbranding=1&showinfo=0`;
+    }
+    return url;
+  };
+
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -524,13 +533,13 @@ function ProjectDetailsModal({ project, onClose }: { project: any, onClose: () =
       >
         <button
           onClick={onClose}
-          className="absolute top-6 right-6 z-20 w-12 h-12 rounded-full glass flex items-center justify-center text-white hover:bg-white hover:text-brand-black transition-all"
+          className="absolute top-6 right-6 z-50 w-12 h-12 rounded-full glass flex items-center justify-center text-white hover:bg-white hover:text-brand-black transition-all"
         >
           <X size={24} />
         </button>
 
         {/* Media Side */}
-        <div className="w-full md:w-2/3 aspect-video md:aspect-auto relative group overflow-hidden bg-black">
+        <div className="w-full md:w-2/3 aspect-video md:aspect-auto relative group overflow-hidden bg-black flex items-center justify-center">
           {!isPlaying ? (
             <>
               <img 
@@ -538,7 +547,6 @@ function ProjectDetailsModal({ project, onClose }: { project: any, onClose: () =
                 alt={project.title} 
                 className="w-full h-full object-cover brightness-50" 
               />
-              
               <div className="absolute inset-0 flex items-center justify-center">
                 <motion.button
                   whileHover={{ scale: 1.1 }}
@@ -548,7 +556,6 @@ function ProjectDetailsModal({ project, onClose }: { project: any, onClose: () =
                   <Play size={32} fill="currentColor" className="ml-1" />
                 </motion.button>
               </div>
-
               <div className="absolute bottom-0 left-0 w-full p-8 bg-gradient-to-t from-brand-black to-transparent pointer-events-none">
                 <div className="flex gap-4 items-center">
                   <div className="flex items-center gap-2 text-xs text-brand-cyan font-bold uppercase tracking-widest">
@@ -563,9 +570,9 @@ function ProjectDetailsModal({ project, onClose }: { project: any, onClose: () =
             </>
           ) : (
             <iframe
-              src={`${project.videoUrl}${project.videoUrl.includes('?') ? '&' : '?'}autoplay=1`}
+              src={getEmbedUrl(project.videoUrl)}
               title={project.title}
-              className="w-full h-full absolute inset-0"
+              className="w-full h-full absolute inset-0 z-20"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowFullScreen
               frameBorder="0"

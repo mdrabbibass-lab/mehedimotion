@@ -55,16 +55,16 @@ const PROJECTS: Project[] = [
   },
   {
     id: "p2",
-    title: "Nike: Speed Reimagined",
+    title: "Modern Real Estate",
     category: "Commercial",
-    client: "Nike Global",
-    year: "2023",
-    duration: "0:60",
-    desc: "High-octane commercial edit for Nike's latest runner series.",
-    fullDesc: "The goal was to communicate breathless speed. Using frantic jump-cuts, speed ramping, and custom foley sound design, we created a commercial that feels like a heartbeat racing at 180 BPM.",
-    image: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&q=80&w=1200",
+    client: "Jack",
+    year: "2025",
+    duration: "0:31",
+    desc: "High-octane commercial edit for premium property listings.",
+    fullDesc: "The goal was to communicate breathless speed and luxury. Using frantic jump-cuts, speed ramping, and custom foley sound design, we created a commercial that feels like a heartbeat racing at 180 BPM while showcasing architectural beauty.",
+    image: "https://i.postimg.cc/1zVHcsZ2/maxres1.webp",
     accent: "brand-crimson",
-    videoUrl: "#"
+    videoUrl: "https://www.youtube.com/embed/SZoYThE4eJc?rel=0"
   },
   {
     id: "p3",
@@ -72,9 +72,9 @@ const PROJECTS: Project[] = [
     category: "Reels",
     client: "Synthese Records",
     year: "2024",
-    duration: "4:20",
+    duration: "0:50",
     desc: "An experimental exploration of sound visualization through particles.",
-    fullDesc: "A music video for 'Synthese'. We used Houdini to simulate millions of particles responding dynamically to the track's sub-frequencies, creating a visual landscape that breathes with the music.",
+    fullDesc: "A short reel showcase for 'Synthese'. We used Houdini to simulate millions of particles responding dynamically to the track's sub-frequencies, creating a visual landscape that breathes with the music, optimized for vertical mobile viewing.",
     image: "https://images.unsplash.com/photo-1550745165-9bc0b25272a7?auto=format&fit=crop&q=80&w=1200",
     accent: "brand-cyan",
     videoUrl: "#"
@@ -90,7 +90,7 @@ const PROJECTS: Project[] = [
     fullDesc: "Focusing on the micro-movements of a high-end timepiece. The lighting setup was designed to emphasize every polished surface and mechanical heartbeat without distracting from the watch's simple elegance.",
     image: "https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&q=80&w=1200",
     accent: "brand-crimson",
-    videoUrl: "#"
+    videoUrl: "https://www.youtube.com/embed/PLsVWIVVW7E?si=s3yJ8jCl2n5zdrbb"
   },
   {
     id: "p5",
@@ -120,79 +120,105 @@ const PROJECTS: Project[] = [
   },
   {
     id: "p7",
-    title: "Nike: Speed Reimagined",
+    title: "Urban Velocity",
     category: "Reels",
     client: "Nike Global",
     year: "2023",
-    duration: "0:60",
-    desc: "High-octane commercial edit for Nike's latest runner series.",
-    fullDesc: "The goal was to communicate breathless speed. Using frantic jump-cuts, speed ramping, and custom foley sound design, we created a commercial that feels like a heartbeat racing at 180 BPM.",
+    duration: "0:15",
+    desc: "High-octane vertical edit for social media storytelling.",
+    fullDesc: "Designed for rapid engagement on mobile platforms. This reel features aggressive speed ramping and visual punchiness to stop the scroll and highlight the product's dynamic nature in urban environments.",
     image: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&q=80&w=1200",
     accent: "brand-crimson",
     videoUrl: "#"
   },
   {
     id: "p8",
-    title: "Nike: Speed Reimagined",
+    title: "Automotive Precision",
     category: "Commercial",
-    client: "Nike Global",
+    client: "BMW Group",
     year: "2023",
-    duration: "0:60",
-    desc: "High-octane commercial edit for Nike's latest runner series.",
-    fullDesc: "The goal was to communicate breathless speed. Using frantic jump-cuts, speed ramping, and custom foley sound design, we created a commercial that feels like a heartbeat racing at 180 BPM.",
-    image: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&q=80&w=1200",
-    accent: "brand-crimson",
+    duration: "0:45",
+    desc: "Cinematic commercial highlighting engineering and design.",
+    fullDesc: "A high-end commercial focus on the intersection of luxury and performance. We used motion control rigs and stylized lighting to emphasize the curves and technological advancements of the latest model.",
+    image: "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&q=80&w=1200",
+    accent: "brand-cyan",
     videoUrl: "#"
   },
   {
     id: "p9",
-    title: "Nike: Speed Reimagined",
+    title: "The Creator Economy",
     category: "YouTube",
-    client: "Nike Global",
+    client: "TechReview",
     year: "2023",
-    duration: "0:60",
-    desc: "High-octane commercial edit for Nike's latest runner series.",
-    fullDesc: "The goal was to communicate breathless speed. Using frantic jump-cuts, speed ramping, and custom foley sound design, we created a commercial that feels like a heartbeat racing at 180 BPM.",
-    image: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&q=80&w=1200",
-    accent: "brand-crimson",
+    duration: "12:30",
+    desc: "Deep dive documentary-style edit for YouTube audiences.",
+    fullDesc: "A comprehensive look at digital creation. The edit balances fast-paced information delivery with cinematic 'B-roll' and custom info-graphics to maintain viewer retention throughout the long-form content.",
+    image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&q=80&w=1200",
+    accent: "brand-cyan",
     videoUrl: "#"
   },
   {
     id: "p10",
-    title: "Nike: Speed Reimagined",
+    title: "Data Visualization",
     category: "Motion Graphics",
-    client: "Nike Global",
-    year: "2023",
-    duration: "0:60",
-    desc: "High-octane commercial edit for Nike's latest runner series.",
-    fullDesc: "The goal was to communicate breathless speed. Using frantic jump-cuts, speed ramping, and custom foley sound design, we created a commercial that feels like a heartbeat racing at 180 BPM.",
-    image: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&q=80&w=1200",
-    accent: "brand-crimson",
+    client: "InfraCorp",
+    year: "2024",
+    duration: "1:15",
+    desc: "Complex data turned into beautiful, digestible motion art.",
+    fullDesc: "Turning raw network statistics into a fluid aesthetic experience. We used abstract geometry and neon lighting to represent data flow within a global infrastructure system.",
+    image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=1200",
+    accent: "brand-cyan",
     videoUrl: "#"
   },
   {
     id: "p11",
-    title: "Nike: Speed Reimagined",
+    title: "Street Style Showdown",
     category: "Reels",
-    client: "Nike Global",
-    year: "2023",
-    duration: "0:60",
-    desc: "High-octane commercial edit for Nike's latest runner series.",
-    fullDesc: "The goal was to communicate breathless speed. Using frantic jump-cuts, speed ramping, and custom foley sound design, we created a commercial that feels like a heartbeat racing at 180 BPM.",
+    client: "Adidas (Concept)",
+    year: "2024",
+    duration: "0:12",
+    desc: "Snappy, music-driven reel for youth culture engagement.",
+    fullDesc: "Focused on rhythm and attitude. Every cut is synced to the beat, using whip-pans and digital zoom effects to create an energetic loopable experience for social media platforms.",
     image: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&q=80&w=1200",
     accent: "brand-crimson",
     videoUrl: "#"
   },
   {
     id: "p12",
-    title: "Nike: Speed Reimagined",
-    category: "Commercial",
-    client: "Nike Global",
+    title: "Liquid Motion Tech",
+    category: "Reels",
+    client: "Razor (Spec)",
     year: "2023",
-    duration: "0:60",
-    desc: "High-octane commercial edit for Nike's latest runner series.",
-    fullDesc: "The goal was to communicate breathless speed. Using frantic jump-cuts, speed ramping, and custom foley sound design, we created a commercial that feels like a heartbeat racing at 180 BPM.",
+    duration: "0:09",
+    desc: "Satisfying product loop for vertical mobile feeds.",
+    fullDesc: "An exploration of texture and lighting on metallic surfaces. This minimalist reel uses slow-motion macro shots and subtle light sweeps to create a premium, high-tech feel for the product reveal.",
     image: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&q=80&w=1200",
+    accent: "brand-cyan",
+    videoUrl: "#"
+  },
+  {
+    id: "p13",
+    title: "Summer Vibes",
+    category: "Reels",
+    client: "Visit Bali",
+    year: "2023",
+    duration: "0:15",
+    desc: "Vibrant travel highlights optimized for quick consumption.",
+    fullDesc: "A fast-paced journey through tropical landscapes. Using warm color grading and seamless transitions, we captured the essence of a summer getaway in a format perfect for mobile sharing.",
+    image: "https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&q=80&w=1200",
+    accent: "brand-cyan",
+    videoUrl: "#"
+  },
+  {
+    id: "p14",
+    title: "Organic Skincare",
+    category: "Commercial",
+    client: "Lumia Organics",
+    year: "2023",
+    duration: "0:30",
+    desc: "Soft-focus commercial edit emphasizing purity and nature.",
+    fullDesc: "A commercial that breathes calmness. The editing style is deliberate and slow, focusing on the organic textures of the ingredients and the refreshing feeling of the final product application.",
+    image: "https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&q=80&w=1200",
     accent: "brand-crimson",
     videoUrl: "#"
   },
@@ -297,22 +323,22 @@ function Navbar({ onNavigate, currentPage }: { onNavigate: (page: string) => voi
   };
 
   return (
-    <nav className={`fixed top-0 left-0 w-full z-[100] transition-all duration-700 ${isScrolled ? 'py-4 glass' : 'py-8 bg-transparent'}`}>
-      <div className="max-w-[1400px] mx-auto px-6 sm:px-10 flex justify-between items-center">
+    <nav className={`fixed top-0 left-0 w-full z-[100] transition-all duration-700 ${isScrolled ? 'py-3 glass' : 'py-6 bg-transparent'}`}>
+      <div className="max-w-[1400px] mx-auto px-5 sm:px-10 flex justify-between items-center">
         <motion.div 
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}
           className="flex items-center gap-2 cursor-pointer group"
           onClick={() => onNavigate('home')}
         >
-          <div className="w-8 h-8 rounded bg-brand-cyan glow-cyan flex items-center justify-center group-hover:scale-110 transition-transform duration-500">
-            <Play size={18} className="text-brand-black ml-0.5" fill="currentColor" />
+          <div className="w-7 h-7 rounded bg-brand-cyan glow-cyan flex items-center justify-center group-hover:scale-110 transition-transform duration-500">
+            <Play size={14} className="text-brand-black ml-0.5" fill="currentColor" />
           </div>
-          <span className="font-display font-bold text-lg sm:text-xl tracking-tight text-white group-hover:text-brand-cyan transition-colors duration-500">MEHEDI HASAN</span>
+          <span className="font-display font-bold text-base sm:text-lg tracking-tight text-white group-hover:text-brand-cyan transition-colors duration-500">MEHEDI HASAN</span>
         </motion.div>
 
         {/* Desktop Nav */}
-        <div className="hidden md:flex items-center gap-10">
+        <div className="hidden md:flex items-center gap-8">
           {navLinks.map((link, idx) => (
             <motion.button
               key={link}
@@ -320,7 +346,7 @@ function Navbar({ onNavigate, currentPage }: { onNavigate: (page: string) => voi
               initial={{ opacity: 0, y: -10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: idx * 0.1 }}
-              className="text-xs font-bold tracking-[0.2em] uppercase hover:text-brand-cyan transition-colors"
+              className="text-[10px] font-bold tracking-[0.2em] uppercase hover:text-brand-cyan transition-colors"
             >
               {link}
             </motion.button>
@@ -330,9 +356,9 @@ function Navbar({ onNavigate, currentPage }: { onNavigate: (page: string) => voi
         {/* Mobile Menu Toggle */}
         <button 
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)} 
-          className="md:hidden w-10 h-10 rounded-full flex items-center justify-center glass hover:bg-brand-cyan hover:text-brand-black transition-all duration-300"
+          className="md:hidden w-9 h-9 rounded-full flex items-center justify-center glass hover:bg-brand-cyan hover:text-brand-black transition-all duration-300"
         >
-          {isMobileMenuOpen ? <X size={20} /> : <Menu size={20} />}
+          {isMobileMenuOpen ? <X size={18} /> : <Menu size={18} />}
         </button>
       </div>
 
@@ -340,12 +366,12 @@ function Navbar({ onNavigate, currentPage }: { onNavigate: (page: string) => voi
       <AnimatePresence>
         {isMobileMenuOpen && (
           <motion.div
-            initial={{ opacity: 0, y: -20 }}
+            initial={{ opacity: 0, y: -10 }}
             animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -20 }}
-            className="fixed inset-0 top-[72px] md:hidden bg-brand-black/95 backdrop-blur-2xl z-[90]"
+            exit={{ opacity: 0, y: -10 }}
+            className="fixed inset-0 top-[60px] md:hidden bg-brand-black/98 backdrop-blur-2xl z-[90]"
           >
-            <div className="flex flex-col items-center justify-center h-[calc(100vh-72px)] p-10 gap-10">
+            <div className="flex flex-col items-center justify-center h-[calc(100vh-60px)] p-10 gap-8">
               {navLinks.map((link, idx) => (
                 <motion.button
                   key={link}
@@ -353,7 +379,7 @@ function Navbar({ onNavigate, currentPage }: { onNavigate: (page: string) => voi
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: idx * 0.1 }}
                   onClick={() => handleLinkClick(link)}
-                  className="text-3xl font-display font-bold uppercase tracking-[0.2em] text-white hover:text-brand-cyan transition-colors"
+                  className="text-2xl font-display font-bold uppercase tracking-[0.15em] text-white hover:text-brand-cyan transition-colors"
                 >
                   {link}
                 </motion.button>
@@ -368,18 +394,18 @@ function Navbar({ onNavigate, currentPage }: { onNavigate: (page: string) => voi
 
 function Hero({ onNavigate }: { onNavigate: (page: string) => void }) {
   return (
-    <section id="home" className="relative min-h-[100dvh] flex items-center justify-center overflow-hidden py-0 sm:py-0 lg:py-0 px-0 sm:px-0 lg:px-0">
+    <section id="home" className="relative min-h-[100dvh] flex items-center justify-center overflow-hidden py-12 px-5 sm:px-10">
       {/* Background Decor */}
-      <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-brand-cyan/10 rounded-full blur-[120px] animate-pulse pointer-events-none" />
-      <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-brand-crimson/5 rounded-full blur-[120px] animate-pulse delay-1000 pointer-events-none" />
+      <div className="absolute top-1/4 left-1/4 w-72 h-72 bg-brand-cyan/10 rounded-full blur-[100px] animate-pulse pointer-events-none" />
+      <div className="absolute bottom-1/4 right-1/4 w-72 h-72 bg-brand-crimson/5 rounded-full blur-[100px] animate-pulse delay-1000 pointer-events-none" />
       
-      <div className="relative z-10 w-full max-w-[1400px] mx-auto text-center px-6 sm:px-10">
+      <div className="relative z-10 w-full max-w-[1400px] mx-auto text-center">
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
         >
-          <span className="inline-block px-4 py-1.5 rounded-full border border-white/10 text-brand-cyan text-[10px] md:text-[11px] font-bold uppercase tracking-[0.4em] mb-8 bg-white/[0.03]">
+          <span className="inline-block px-3 py-1 rounded-full border border-white/10 text-brand-cyan text-[9px] md:text-[10px] font-bold uppercase tracking-[0.4em] mb-6 bg-white/[0.03]">
             Motion Designer & Video Editor
           </span>
           <motion.h1 
@@ -389,14 +415,14 @@ function Hero({ onNavigate }: { onNavigate: (page: string) => void }) {
               hidden: { opacity: 0 },
               visible: {
                 opacity: 1,
-                transition: { staggerChildren: 0.2 }
+                transition: { staggerChildren: 0.1 }
               }
             }}
-            className="text-5xl sm:text-7xl md:text-8xl lg:text-[clamp(4.5rem,7vw,7.5rem)] font-bold mb-8 leading-[1.1] text-white mix-blend-difference tracking-tight uppercase"
+            className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-bold mb-6 leading-[1.1] text-white tracking-tight uppercase"
           >
             <motion.span 
               variants={{
-                hidden: { opacity: 0, y: 20 },
+                hidden: { opacity: 0, y: 10 },
                 visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: [0.22, 1, 0.36, 1] } }
               }}
               className="block"
@@ -405,7 +431,7 @@ function Hero({ onNavigate }: { onNavigate: (page: string) => void }) {
             </motion.span>
             <motion.span 
               variants={{
-                hidden: { opacity: 0, y: 20 },
+                hidden: { opacity: 0, y: 10 },
                 visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: [0.22, 1, 0.36, 1] } }
               }}
               className="block"
@@ -414,7 +440,7 @@ function Hero({ onNavigate }: { onNavigate: (page: string) => void }) {
             </motion.span>
             <motion.span 
               variants={{
-                hidden: { opacity: 0, y: 20 },
+                hidden: { opacity: 0, y: 10 },
                 visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: [0.22, 1, 0.36, 1] } }
               }}
               className="text-gradient block"
@@ -422,24 +448,24 @@ function Hero({ onNavigate }: { onNavigate: (page: string) => void }) {
               BEST
             </motion.span>
           </motion.h1>
-          <p className="max-w-3xl mx-auto text-muted-gray text-base md:text-lg lg:text-xl font-light leading-relaxed mb-12 px-4">
+          <p className="max-w-2xl mx-auto text-muted-gray text-sm md:text-base lg:text-lg font-light leading-relaxed mb-10 px-4">
             I transform complex concepts into clean and compelling visuals, which make brands more engaging and credible. My visual content is designed to capture attention, build trust, and give your brand a special status.
           </p>
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-5">
             <motion.button
               onClick={() => onNavigate('projects')}
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className="w-full sm:w-auto px-10 py-5 bg-brand-cyan text-brand-black font-bold text-xs uppercase tracking-widest rounded-sm glow-cyan flex items-center justify-center gap-3 group transition-all"
+              whileHover={{ scale: 1.02 }}
+              whileTap={{ scale: 0.98 }}
+              className="w-full sm:w-auto px-8 py-4 bg-brand-cyan text-brand-black font-bold text-[10px] uppercase tracking-widest rounded-sm glow-cyan flex items-center justify-center gap-2 group transition-all"
             >
               VIEW GALLERY
-              <ChevronRight size={18} className="group-hover:translate-x-1 transition-transform" />
+              <ChevronRight size={16} className="group-hover:translate-x-1 transition-transform" />
             </motion.button>
             <motion.a
               href="#contact"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className="w-full sm:w-auto px-10 py-5 border border-white/10 hover:border-brand-cyan/50 text-white font-bold text-xs uppercase tracking-widest rounded-sm transition-all flex items-center justify-center"
+              whileHover={{ scale: 1.02 }}
+              whileTap={{ scale: 0.98 }}
+              className="w-full sm:w-auto px-8 py-4 border border-white/10 hover:border-brand-cyan/50 text-white font-bold text-[10px] uppercase tracking-widest rounded-sm transition-all flex items-center justify-center"
             >
               GET IN TOUCH
             </motion.a>
@@ -450,61 +476,115 @@ function Hero({ onNavigate }: { onNavigate: (page: string) => void }) {
       <motion.div 
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ delay: 1.5, duration: 1.5 }}
-        className="absolute bottom-2 left-1/2 -translate-x-1/2 flex flex-col items-center gap-4 text-muted-gray hidden sm:flex w-[182px] h-[50px] pl-0"
+        transition={{ delay: 1.2, duration: 1.2 }}
+        className="absolute bottom-6 left-1/2 -translate-x-1/2 flex flex-col items-center gap-3 text-muted-gray hidden sm:flex"
       >
-        <span className="text-[10px] uppercase tracking-[0.4em] font-medium">Scroll to explore</span>
-        <div className="w-0.5 h-16 bg-gradient-to-b from-brand-cyan to-transparent animate-bounce" />
+        <span className="text-[9px] uppercase tracking-[0.4em] font-medium">Scroll to explore</span>
+        <div className="w-px h-12 bg-gradient-to-b from-brand-cyan to-transparent animate-bounce" />
       </motion.div>
     </section>
   );
 }
 
 function ProjectCard({ project, index, onSelect }: { project: Project, index: number, onSelect: (p: Project) => void, key?: string }) {
+  const isReel = project.category === 'Reels';
+  
   return (
     <motion.div
       initial={{ opacity: 0, y: 30 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ delay: index * 0.1 }}
-      className="group relative overflow-hidden rounded-lg aspect-[11/14] md:aspect-[16/10] cursor-pointer"
+      className="group cursor-pointer"
       onClick={() => onSelect(project)}
     >
-      <img 
-        src={project.image} 
-        alt={project.title} 
-        className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 brightness-50 group-hover:brightness-75"
-      />
+      <div className={`relative overflow-hidden rounded-xl mb-6 shadow-2xl transition-all duration-500 group-hover:shadow-brand-cyan/10 ${
+        isReel 
+          ? 'aspect-[9/16]' 
+          : 'aspect-video'
+      }`}>
+        <img 
+          src={project.image} 
+          alt={project.title} 
+          className="w-full h-full object-cover transition-all duration-700 group-hover:scale-105"
+        />
+        
+        {/* Subtle Hover State */}
+        <div className="absolute inset-0 bg-brand-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center">
+          <motion.div 
+            initial={{ scale: 0.8, opacity: 0 }}
+            whileHover={{ scale: 1.1 }}
+            className="w-14 h-14 rounded-full bg-white/10 backdrop-blur-md border border-white/20 flex items-center justify-center text-white"
+          >
+            <Play size={24} fill="currentColor" className="ml-1" />
+          </motion.div>
+        </div>
+
+        {/* Glow Effect Corner */}
+        <div className={`absolute -top-10 -right-10 w-32 h-32 blur-3xl opacity-0 group-hover:opacity-20 transition-opacity duration-700 rounded-full ${project.accent === 'brand-cyan' ? 'bg-brand-cyan' : 'bg-brand-crimson'}`} />
+      </div>
       
-      {/* Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-t from-brand-black via-brand-black/20 to-transparent p-8 flex flex-col justify-end">
-        <div className="flex justify-between items-start mb-2">
-           <span className={`text-[10px] font-bold uppercase tracking-widest ${project.accent === 'brand-cyan' ? 'text-brand-cyan' : 'text-brand-crimson'}`}>
+      <div className="px-1">
+        <div className="flex items-center justify-between mb-1.5">
+           <span className={`text-[8px] font-black uppercase tracking-[0.3em] ${project.accent === 'brand-cyan' ? 'text-brand-cyan' : 'text-brand-crimson'}`}>
             {project.category}
           </span>
-          <span className="text-white/40 text-[10px] font-mono">{project.duration}</span>
+          <div className="flex items-center gap-1.5 text-white/30 text-[8px] font-mono">
+             <Clock size={9} />
+             {project.duration}
+          </div>
         </div>
-        <h3 className="text-2xl md:text-3xl font-bold text-white mb-2 group-hover:text-brand-cyan transition-colors">
+        <h3 className="text-lg md:text-xl font-bold text-white group-hover:text-brand-cyan transition-colors duration-300 leading-tight">
           {project.title}
         </h3>
-        <p className="text-muted-gray text-sm mb-6 max-w-sm opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-500">
-          {project.desc}
-        </p>
-        <div className="flex items-center gap-4 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-           <div className={`w-10 h-10 rounded-full border border-white/20 flex items-center justify-center text-white group-hover:bg-white group-hover:text-brand-black transition-all`}>
-              <Play size={16} fill="currentColor" />
-           </div>
-           <span className="text-[10px] font-bold uppercase tracking-widest text-white">Play Reel</span>
+        <div className="mt-3 overflow-hidden">
+           <div className="w-0 group-hover:w-full h-px bg-gradient-to-r from-brand-cyan/50 to-transparent transition-all duration-700" />
         </div>
       </div>
-
-      {/* Glow Effect */}
-      <div className={`absolute top-0 right-0 w-32 h-32 blur-3xl opacity-0 group-hover:opacity-40 transition-opacity ${project.accent === 'brand-cyan' ? 'bg-brand-cyan' : 'bg-brand-crimson'}`} />
     </motion.div>
   );
 }
 
 function ProjectDetailsModal({ project, onClose }: { project: Project, onClose: () => void }) {
+  const [isPlaying, setIsPlaying] = useState(false);
+
+  // Helper to get YouTube embed URL or handle direct embed codes
+  const getEmbedUrl = (url: string) => {
+    if (!url || url === '#' || url === '') return null;
+    
+    // If user pasted a full iframe, extract the src
+    if (url.includes('<iframe')) {
+      const srcMatch = url.match(/src="([^"]+)"/);
+      if (srcMatch) {
+         let src = srcMatch[1];
+         // Force autoplay if requested
+         if (!src.includes('autoplay=1')) {
+            src += (src.includes('?') ? '&' : '?') + 'autoplay=1';
+         }
+         return src;
+      }
+    }
+
+    // Handle regular youtube links (including unlisted)
+    const youtubeRegExp = /^.*(youtu.be\/|v\/|u\/\w\/|embed\/|watch\?v=|\&v=)([^#\&\?]*).*/;
+    const youtubeMatch = url.match(youtubeRegExp);
+
+    if (youtubeMatch && youtubeMatch[2].length === 11) {
+      return `https://www.youtube.com/embed/${youtubeMatch[2]}?autoplay=1&rel=0&modestbranding=1`;
+    }
+
+    // Handle Vimeo
+    const vimeoRegExp = /vimeo\.com\/(?:channels\/(?:\w+\/)?|groups\/(?:[^\/]*)\/videos\/|album\/(?:\d+)\/video\/|video\/|)(\d+)(?:$|\/|\?)/;
+    const vimeoMatch = url.match(vimeoRegExp);
+    if (vimeoMatch) {
+      return `https://player.vimeo.com/video/${vimeoMatch[1]}?autoplay=1`;
+    }
+
+    return url;
+  };
+
+  const embedUrl = getEmbedUrl(project.videoUrl);
+
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -518,73 +598,92 @@ function ProjectDetailsModal({ project, onClose }: { project: Project, onClose: 
         initial={{ opacity: 0, scale: 0.9, y: 20 }}
         animate={{ opacity: 1, scale: 1, y: 0 }}
         exit={{ opacity: 0, scale: 0.9, y: 20 }}
-        className="relative w-full max-w-6xl glass rounded-2xl overflow-hidden flex flex-col md:flex-row shadow-[0_0_100px_rgba(0,0,0,0.5)]"
+        className="relative w-full max-w-6xl glass rounded-2xl overflow-hidden flex flex-col md:flex-row shadow-[0_0_100px_rgba(0,0,0,0.5)] bg-brand-black"
       >
         <button 
           onClick={onClose}
-          className="absolute top-6 right-6 z-20 w-12 h-12 rounded-full glass flex items-center justify-center text-white hover:bg-white hover:text-brand-black transition-all"
+          className="absolute top-4 right-4 md:top-6 md:right-6 z-20 w-10 h-10 md:w-12 md:h-12 rounded-full glass flex items-center justify-center text-white hover:bg-white hover:text-brand-black transition-all"
         >
-          <X size={24} />
+          <X size={20} />
         </button>
 
         {/* Media Side */}
-        <div className="w-full md:w-2/3 aspect-video md:aspect-auto relative group">
-          <img src={project.image} alt={project.title} className="w-full h-full object-cover brightness-50" />
-          <div className="absolute inset-0 flex items-center justify-center">
-            <motion.button 
-              whileHover={{ scale: 1.1 }}
-              className="w-24 h-24 rounded-full bg-brand-cyan flex items-center justify-center text-brand-black glow-cyan translate-y-4 group-hover:translate-y-0 opacity-0 group-hover:opacity-100 transition-all duration-500"
-            >
-              <Play size={32} fill="currentColor" className="ml-1" />
-            </motion.button>
-          </div>
-          <div className="absolute bottom-0 left-0 w-full p-8 bg-gradient-to-t from-brand-black to-transparent">
-             <div className="flex gap-4 items-center">
-                <div className="flex items-center gap-2 text-xs text-brand-cyan font-bold uppercase tracking-widest">
-                   <Clock size={14} /> {project.duration}
-                </div>
-                <div className="w-1 h-1 rounded-full bg-white/20" />
-                <div className="flex items-center gap-2 text-xs text-white/60 font-bold uppercase tracking-widest">
-                   <Video size={14} /> 4K 60FPS
-                </div>
-             </div>
-          </div>
+        <div className="w-full md:w-2/3 aspect-video relative group bg-black overflow-hidden flex items-center justify-center">
+          {isPlaying && embedUrl ? (
+            <iframe
+              src={embedUrl}
+              className="w-full h-full absolute inset-0"
+              allow="autoplay; fullscreen; picture-in-picture; encrypted-media"
+              allowFullScreen
+              title={project.title}
+              frameBorder="0"
+            ></iframe>
+          ) : (
+            <div className="relative w-full h-full cursor-pointer" onClick={() => setIsPlaying(true)}>
+              <img src={project.image} alt={project.title} className="w-full h-full object-cover brightness-50 group-hover:scale-105 transition-transform duration-700" />
+              <div className="absolute inset-0 flex items-center justify-center">
+                <motion.button 
+                  whileHover={{ scale: 1.1 }}
+                  className="w-16 h-16 md:w-24 md:h-24 rounded-full bg-brand-cyan flex items-center justify-center text-brand-black glow-cyan translate-y-2 group-hover:translate-y-0 opacity-100 transition-all duration-500"
+                >
+                  <Play size={24} fill="currentColor" className="ml-1" />
+                </motion.button>
+              </div>
+            </div>
+          )}
+          
+          {!isPlaying && (
+            <div className="absolute bottom-0 left-0 w-full p-6 md:p-8 bg-gradient-to-t from-brand-black to-transparent pointer-events-none">
+               <div className="flex gap-3 items-center">
+                  <div className="flex items-center gap-1.5 text-[10px] text-brand-cyan font-bold uppercase tracking-widest">
+                     <Clock size={12} /> {project.duration}
+                  </div>
+                  <div className="w-1 h-1 rounded-full bg-white/20" />
+                  <div className="flex items-center gap-1.5 text-[10px] text-white/60 font-bold uppercase tracking-widest">
+                     <Video size={12} /> 4K 60FPS
+                  </div>
+               </div>
+            </div>
+          )}
         </div>
 
         {/* Info Side */}
-        <div className="w-full md:w-1/3 p-8 md:p-12 flex flex-col overflow-y-auto max-h-[500px] md:max-h-none">
-          <span className={`text-[10px] font-bold uppercase tracking-[0.4em] mb-4 ${project.accent === 'brand-cyan' ? 'text-brand-cyan' : 'text-brand-crimson'}`}>
+        <div className="w-full md:w-1/3 p-6 md:p-10 flex flex-col overflow-y-auto max-h-[40vh] md:max-h-none bg-brand-black/50">
+          <span className={`text-[10px] font-bold uppercase tracking-[0.4em] mb-3 ${project.accent === 'brand-cyan' ? 'text-brand-cyan' : 'text-brand-crimson'}`}>
             {project.category}
           </span>
-          <h2 className="text-4xl font-bold text-white mb-6 leading-tight">{project.title}</h2>
+          <h2 className="text-2xl md:text-4xl font-bold text-white mb-6 leading-tight">{project.title}</h2>
           
-          <div className="space-y-6 mb-12">
-            <div className="flex items-center justify-between py-4 border-b border-white/5">
-               <div className="flex items-center gap-3 text-muted-gray text-xs uppercase tracking-widest">
-                  <User size={14} /> Client
+          <div className="space-y-4 mb-8">
+            <div className="flex items-center justify-between py-3 border-b border-white/5">
+               <div className="flex items-center gap-2.5 text-muted-gray text-[10px] uppercase tracking-widest">
+                  <User size={12} /> Client
                </div>
-               <span className="text-white text-sm font-medium">{project.client}</span>
+               <span className="text-white text-xs font-medium">{project.client}</span>
             </div>
-            <div className="flex items-center justify-between py-4 border-b border-white/5">
-               <div className="flex items-center gap-3 text-muted-gray text-xs uppercase tracking-widest">
-                  <Calendar size={14} /> Year
+            <div className="flex items-center justify-between py-3 border-b border-white/5">
+               <div className="flex items-center gap-2.5 text-muted-gray text-[10px] uppercase tracking-widest">
+                  <Calendar size={12} /> Year
                </div>
-               <span className="text-white text-sm font-medium">{project.year}</span>
+               <span className="text-white text-xs font-medium">{project.year}</span>
             </div>
           </div>
 
-          <div className="mb-12">
-             <h4 className="text-[10px] text-muted-gray uppercase tracking-widest font-bold mb-4">Project Brief</h4>
-             <p className="text-silver leading-relaxed font-light">
+          <div className="mb-8">
+             <h4 className="text-[10px] text-muted-gray uppercase tracking-widest font-bold mb-3">Project Brief</h4>
+             <p className="text-silver/70 leading-relaxed font-light text-xs md:text-sm">
                 {project.fullDesc}
              </p>
           </div>
 
-          <div className="mt-auto space-y-4">
-             <button className="w-full py-4 bg-white text-brand-black font-bold uppercase tracking-widest hover:bg-brand-cyan transition-colors">
+          <div className="mt-auto space-y-3">
+             <button 
+               onClick={() => setIsPlaying(true)}
+               className="w-full py-3.5 bg-white text-brand-black font-bold text-[10px] uppercase tracking-widest hover:bg-brand-cyan transition-colors"
+             >
                 Play Full Reel
              </button>
-             <button className="w-full py-4 border border-white/10 text-white font-bold uppercase tracking-widest hover:bg-white/5 transition-colors">
+             <button className="w-full py-3.5 border border-white/10 text-white font-bold text-[10px] uppercase tracking-widest hover:bg-white/5 transition-colors">
                 Behind the Scenes
              </button>
           </div>
@@ -605,27 +704,27 @@ function GalleryView({ onBack, onSelectProject }: { onBack: () => void, onSelect
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
-      className="min-h-screen pt-32 sm:pt-40 pb-24 px-6 sm:px-10 lg:px-20 bg-brand-black"
+      className="min-h-screen pt-24 sm:pt-32 pb-16 px-5 sm:px-10 lg:px-20 bg-brand-black"
     >
       <div className="max-w-[1400px] mx-auto">
-        <div className="flex flex-col lg:flex-row lg:items-end justify-between mb-16 gap-10">
-           <div className="space-y-6 text-center lg:text-left">
+        <div className="flex flex-col lg:flex-row lg:items-end justify-between mb-12 gap-8">
+           <div className="space-y-4 text-center lg:text-left">
               <button 
                 onClick={onBack}
-                className="inline-flex items-center gap-2 text-muted-gray hover:text-brand-cyan transition-colors text-[10px] font-bold uppercase tracking-[0.4em] group"
+                className="inline-flex items-center gap-2 text-muted-gray hover:text-brand-cyan transition-colors text-[9px] font-bold uppercase tracking-[0.4em] group"
               >
-                <ArrowLeft size={14} className="group-hover:-translate-x-1 transition-transform" />
+                <ArrowLeft size={12} className="group-hover:-translate-x-1 transition-transform" />
                 Back to Home
               </button>
-              <h2 className="text-5xl md:text-7xl lg:text-8xl font-bold text-white leading-none">GALLERY <br className="md:hidden"/><span className="text-gradient">WORKS</span></h2>
+              <h2 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white leading-none">GALLERY <br className="md:hidden"/><span className="text-gradient">WORKS</span></h2>
            </div>
            
-           <div className="flex flex-wrap items-center justify-center lg:justify-start gap-3 sm:gap-4">
+           <div className="flex flex-wrap items-center justify-center lg:justify-start gap-2 sm:gap-3">
               {categories.map(cat => (
                 <button
                   key={cat}
                   onClick={() => setFilter(cat)}
-                  className={`px-5 py-2.5 rounded-full text-[9px] sm:text-[10px] font-bold uppercase tracking-widest transition-all ${filter === cat ? 'bg-brand-cyan text-brand-black glow-cyan' : 'bg-white/5 text-muted-gray hover:bg-white/10 border border-white/5'}`}
+                  className={`px-4 py-2 rounded-full text-[8px] sm:text-[9px] font-bold uppercase tracking-widest transition-all ${filter === cat ? 'bg-brand-cyan text-brand-black glow-cyan' : 'bg-white/5 text-muted-gray hover:bg-white/10 border border-white/5'}`}
                 >
                   {cat}
                 </button>
@@ -635,7 +734,7 @@ function GalleryView({ onBack, onSelectProject }: { onBack: () => void, onSelect
 
         <motion.div 
           layout
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-10"
+          className={`grid grid-cols-1 ${filter === 'Reels' ? 'grid-cols-2 sm:grid-cols-3' : 'sm:grid-cols-2'} ${filter === 'Reels' ? 'lg:grid-cols-4' : 'lg:grid-cols-3'} gap-4 sm:gap-8`}
         >
           <AnimatePresence mode="popLayout">
             {filteredProjects.map((project, idx) => (
@@ -655,40 +754,40 @@ function GalleryView({ onBack, onSelectProject }: { onBack: () => void, onSelect
 
 function Journey() {
   return (
-    <section id="journey" className="py-24 md:py-40 px-6 sm:px-10 lg:px-20 relative bg-brand-black">
+    <section id="journey" className="py-16 md:py-32 px-5 sm:px-10 lg:px-20 relative bg-brand-black">
       <div className="max-w-[1000px] mx-auto">
-        <div className="mb-24 text-center md:text-left">
-          <span className="text-brand-cyan text-[10px] md:text-[11px] font-bold uppercase tracking-[0.4em] mb-4 block">The Evolution</span>
-          <h2 className="text-5xl md:text-7xl font-bold text-white leading-none">THE <span className="text-gradient">JOURNEY</span></h2>
+        <div className="mb-16 text-center md:text-left">
+          <span className="text-brand-cyan text-[9px] md:text-[10px] font-bold uppercase tracking-[0.4em] mb-3 block">The Evolution</span>
+          <h2 className="text-4xl md:text-6xl font-bold text-white leading-none">THE <span className="text-gradient">JOURNEY</span></h2>
         </div>
 
         <div className="relative">
           {/* Vertical Line */}
-          <div className="absolute left-4 md:left-[160px] top-4 bottom-0 w-px bg-gradient-to-b from-brand-cyan via-white/10 to-transparent" />
+          <div className="absolute left-4 md:left-[140px] top-4 bottom-0 w-px bg-gradient-to-b from-brand-cyan via-white/10 to-transparent" />
 
-          <div className="space-y-24 md:space-y-32">
+          <div className="space-y-16 md:space-y-24">
             {EXPERIENCE.map((item, idx) => (
               <motion.div
                 key={idx}
-                initial={{ opacity: 0, x: -20 }}
+                initial={{ opacity: 0, x: -10 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: idx * 0.1, duration: 0.8 }}
-                className="relative flex flex-col md:flex-row gap-6 md:gap-24 pl-12 md:pl-0"
+                className="relative flex flex-col md:flex-row gap-4 md:gap-20 pl-10 md:pl-0"
               >
                 {/* Year range on the left */}
-                <div className="md:w-[120px] md:text-right shrink-0">
-                   <span className="text-brand-cyan font-mono text-sm md:text-base font-bold tracking-tighter">{item.period}</span>
+                <div className="md:w-[100px] md:text-right shrink-0">
+                   <span className="text-brand-cyan font-mono text-xs md:text-sm font-bold tracking-tighter">{item.period}</span>
                 </div>
 
                 {/* Timeline Dot */}
-                <div className="absolute left-4 md:left-[160px] top-1.5 -translate-x-1/2 w-3 h-3 rounded-full bg-brand-black border border-brand-cyan glow-cyan z-10" />
+                <div className="absolute left-4 md:left-[140px] top-1.5 -translate-x-1/2 w-2.5 h-2.5 rounded-full bg-brand-black border border-brand-cyan glow-cyan z-10" />
 
                 {/* Content */}
                 <div className="flex-1">
-                  <h3 className="text-2xl md:text-4xl lg:text-5xl font-bold text-white mb-2 leading-none">{item.role}</h3>
-                  <p className="text-brand-crimson text-[10px] md:text-[11px] font-bold uppercase tracking-[0.4em] mb-6">{item.company}</p>
-                  <p className="text-muted-gray leading-relaxed font-light text-base md:text-lg lg:text-xl max-w-2xl font-sans">
+                  <h3 className="text-xl md:text-3xl lg:text-4xl font-bold text-white mb-2 leading-none">{item.role}</h3>
+                  <p className="text-brand-crimson text-[9px] md:text-[10px] font-bold uppercase tracking-[0.4em] mb-4">{item.company}</p>
+                  <p className="text-muted-gray leading-relaxed font-light text-sm md:text-base lg:text-lg max-w-2xl">
                     {item.desc}
                   </p>
                 </div>
@@ -729,70 +828,70 @@ export default function App() {
                <div className="w-full h-px bg-gradient-to-r from-transparent via-white/10 to-transparent" />
             </div>
 
-            <section id="about" className="py-24 md:py-40 px-6 sm:px-10 lg:px-20 overflow-hidden">
-              <div className="max-w-[1400px] mx-auto grid lg:grid-cols-2 gap-16 lg:gap-24 items-center">
+            <section id="about" className="py-16 md:py-32 px-5 sm:px-10 lg:px-20 overflow-hidden">
+              <div className="max-w-[1400px] mx-auto grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
                 <motion.div
-                  initial={{ opacity: 0, scale: 0.95 }}
+                  initial={{ opacity: 0, scale: 0.98 }}
                   whileInView={{ opacity: 1, scale: 1 }}
                   viewport={{ once: true }}
                   className="relative group order-2 lg:order-1"
                 >
-                  <div className="absolute -inset-4 bg-brand-cyan/20 rounded-2xl blur-[100px] group-hover:bg-brand-cyan/30 transition-all duration-700 opacity-50" />
-                  <div className="relative aspect-[4/5] sm:aspect-square lg:aspect-[4/5] rounded-lg overflow-hidden border border-white/5 glow-cyan">
+                  <div className="absolute -inset-4 bg-brand-cyan/10 rounded-2xl blur-[80px] group-hover:bg-brand-cyan/20 transition-all duration-700 opacity-50" />
+                  <div className="relative aspect-[4/5] sm:aspect-video lg:aspect-[4/5] rounded-lg overflow-hidden border border-white/5 glow-cyan max-w-lg mx-auto">
                     <img 
                       src="https://i.postimg.cc/pdyQ8Nzr/Generated-Image-May-14-2026-3-55PM.jpg" 
                       alt="Mehedi Hasan Portrait" 
-                      className="w-full h-full object-cover grayscale brightness-90 hover:grayscale-0 transition-all duration-1000 scale-105 hover:scale-100" 
+                      className="w-full h-full object-cover grayscale brightness-90 hover:grayscale-0 transition-all duration-1000" 
                     />
                   </div>
                 </motion.div>
 
                 <motion.div
-                   initial={{ opacity: 0, x: 50 }}
+                   initial={{ opacity: 0, x: 20 }}
                    whileInView={{ opacity: 1, x: 0 }}
                    viewport={{ once: true }}
                    className="order-1 lg:order-2 text-center lg:text-left"
                 >
-                  <span className="text-brand-cyan text-[10px] md:text-[11px] font-bold uppercase tracking-[0.4em] mb-4 block">The Visionary</span>
-                  <h2 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-8 text-white leading-[1.1]">MEHEDI <span className="text-brand-cyan">HASAN</span></h2>
-                  <p className="text-muted-gray text-lg md:text-xl mb-10 leading-relaxed font-light font-sans max-w-2xl mx-auto lg:mx-0">
+                  <span className="text-brand-cyan text-[9px] md:text-[10px] font-bold uppercase tracking-[0.4em] mb-4 block">The Visionary</span>
+                  <h2 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-6 text-white leading-[1.1]">MEHEDI <span className="text-brand-cyan">HASAN</span></h2>
+                  <p className="text-muted-gray text-base md:text-lg mb-8 leading-relaxed font-light font-sans max-w-2xl mx-auto lg:mx-0">
                     I am a dedicated visual storyteller with over 3 years of experience in the creative industry. My work focuses on the intersection of cutting-edge technology and raw human emotion.
                   </p>
-                  <div className="grid grid-cols-2 gap-8 mb-12 max-w-md mx-auto lg:mx-0">
-                     <div className="p-6 glass border-white/5 rounded-lg flex flex-col items-center lg:items-start">
-                        <p className="text-4xl font-display font-bold text-brand-cyan mb-1">03+</p>
-                        <p className="text-[10px] text-muted-gray uppercase tracking-[0.2em] font-bold">Years Experience</p>
+                  <div className="grid grid-cols-2 gap-4 sm:gap-6 mb-10 max-w-sm mx-auto lg:mx-0">
+                     <div className="p-4 glass border-white/5 rounded-lg flex flex-col items-center lg:items-start">
+                        <p className="text-3xl font-display font-bold text-brand-cyan mb-1">03+</p>
+                        <p className="text-[9px] text-muted-gray uppercase tracking-[0.2em] font-bold">Years Experience</p>
                      </div>
-                     <div className="p-6 glass border-white/5 rounded-lg flex flex-col items-center lg:items-start">
-                        <p className="text-4xl font-display font-bold text-brand-cyan mb-1">100%</p>
-                        <p className="text-[10px] text-muted-gray uppercase tracking-[0.2em] font-bold">Passion Driven</p>
+                     <div className="p-4 glass border-white/5 rounded-lg flex flex-col items-center lg:items-start">
+                        <p className="text-3xl font-display font-bold text-brand-cyan mb-1">100%</p>
+                        <p className="text-[9px] text-muted-gray uppercase tracking-[0.2em] font-bold">Passion Driven</p>
                      </div>
                   </div>
-                  <button className="inline-flex items-center gap-3 text-white text-xs font-bold uppercase tracking-[0.2em] hover:text-brand-cyan transition-all group p-1">
+                  <button className="inline-flex items-center gap-2 text-white text-[10px] font-bold uppercase tracking-[0.2em] hover:text-brand-cyan transition-all group">
                      LEARN MORE ABOUT ME
-                     <div className="w-8 h-8 rounded-full border border-white/20 flex items-center justify-center group-hover:border-brand-cyan group-hover:bg-brand-cyan/10 transition-all">
-                        <ChevronRight size={16} className="group-hover:translate-x-0.5 transition-transform" />
+                     <div className="w-7 h-7 rounded-full border border-white/10 flex items-center justify-center group-hover:border-brand-cyan/50 group-hover:bg-brand-cyan/5 transition-all">
+                        <ChevronRight size={14} className="group-hover:translate-x-0.5 transition-transform" />
                      </div>
                   </button>
                 </motion.div>
               </div>
             </section>
 
-            <section id="projects" className="py-24 md:py-40 px-6 sm:px-10 lg:px-20">
+            <section id="projects" className="py-16 md:py-32 px-5 sm:px-10 lg:px-20">
               <div className="max-w-[1400px] mx-auto">
-                <div className="flex flex-col lg:flex-row lg:items-end justify-between mb-16 gap-10">
+                <div className="flex flex-col lg:flex-row lg:items-end justify-between mb-12 gap-8">
                   <div className="text-center lg:text-left">
-                    <span className="text-brand-cyan text-[10px] md:text-[11px] font-bold uppercase tracking-[0.4em] mb-4 block">Recent Works</span>
-                    <h2 className="text-5xl md:text-7xl lg:text-8xl font-bold text-white leading-[0.9]">FEATURED <span className="text-gradient">STORIES</span></h2>
+                    <span className="text-brand-cyan text-[9px] md:text-[10px] font-bold uppercase tracking-[0.4em] mb-3 block">Recent Works</span>
+                    <h2 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white leading-[0.9]">FEATURED <span className="text-gradient">STORIES</span></h2>
                   </div>
                   
-                  <div className="flex flex-col sm:flex-row items-center gap-6">
-                    <div className="flex flex-wrap items-center justify-center gap-3">
+                  <div className="flex flex-col sm:flex-row items-center gap-4 sm:gap-6">
+                    <div className="flex flex-wrap items-center justify-center gap-2 sm:gap-3">
                       {['Reels', 'Commercial', 'YouTube', 'Motion Graphics'].map(cat => (
                         <button
                           key={cat}
                           onClick={() => setHomeFilter(cat)}
-                          className={`px-5 py-2.5 rounded-full text-[9px] sm:text-[10px] font-bold uppercase tracking-widest transition-all ${homeFilter === cat ? 'bg-brand-cyan text-brand-black glow-cyan' : 'bg-white/5 text-muted-gray hover:bg-white/10 border border-white/5'}`}
+                          className={`px-4 py-2 rounded-full text-[8px] sm:text-[9px] font-bold uppercase tracking-widest transition-all ${homeFilter === cat ? 'bg-brand-cyan text-brand-black glow-cyan' : 'bg-white/5 text-muted-gray hover:bg-white/10 border border-white/5'}`}
                         >
                           {cat}
                         </button>
@@ -801,7 +900,7 @@ export default function App() {
 
                     <button 
                       onClick={() => setCurrentPage('projects')}
-                      className="px-6 py-3 glass glass-hover text-white text-[9px] font-bold uppercase tracking-[0.2em] transition-all flex items-center justify-center gap-2 group whitespace-nowrap"
+                      className="px-5 py-2.5 glass glass-hover text-white text-[8px] font-bold uppercase tracking-[0.2em] transition-all flex items-center justify-center gap-2 group whitespace-nowrap"
                     >
                       FULL GALLERY
                       <ChevronRight size={14} className="group-hover:translate-x-1 transition-transform" />
@@ -811,10 +910,10 @@ export default function App() {
                 
                 <motion.div 
                   layout
-                  className="grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-12 lg:gap-16"
+                  className={`grid grid-cols-1 sm:grid-cols-2 ${homeFilter === 'Reels' ? 'lg:grid-cols-4' : 'lg:grid-cols-3'} gap-6 sm:gap-8`}
                 >
                   <AnimatePresence mode="popLayout">
-                    {PROJECTS.filter(p => p.category === homeFilter).slice(0, 4).map((project, idx) => (
+                    {PROJECTS.filter(p => p.category === homeFilter).slice(0, homeFilter === 'Reels' ? 4 : 3).map((project, idx) => (
                       <ProjectCard key={project.id} project={project} index={idx} onSelect={setSelectedProject} />
                     ))}
                   </AnimatePresence>
@@ -822,17 +921,17 @@ export default function App() {
               </div>
             </section>
 
-            <section id="skills" className="py-24 px-6 sm:px-10 lg:px-20 relative bg-brand-navy/10 overflow-hidden">
-               <div className="absolute bottom-0 right-0 w-full h-px bg-gradient-to-r from-transparent via-brand-cyan/20 to-transparent" />
+            <section id="skills" className="py-16 md:py-32 px-5 sm:px-10 lg:px-20 relative bg-brand-navy/5 overflow-hidden">
+               <div className="absolute bottom-0 right-0 w-full h-px bg-gradient-to-r from-transparent via-brand-cyan/10 to-transparent" />
                <div className="max-w-[1400px] mx-auto text-center">
-                  <span className="text-brand-cyan text-[10px] md:text-[11px] font-bold uppercase tracking-[0.4em] mb-4 block">Toolkit</span>
-                  <h2 className="text-4xl md:text-6xl font-bold text-white mb-16 uppercase tracking-widest leading-none">The Arsenal</h2>
-                  <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4 sm:gap-6 lg:gap-8">
+                  <span className="text-brand-cyan text-[9px] md:text-[10px] font-bold uppercase tracking-[0.4em] mb-3 block">Toolkit</span>
+                  <h2 className="text-3xl md:text-5xl font-bold text-white mb-12 uppercase tracking-widest leading-none">The Arsenal</h2>
+                  <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4 sm:gap-6">
                     {SKILLS.map((skill, idx) => (
                       <motion.div 
                         key={idx} 
-                        whileHover={{ y: -8, scale: 1.02 }}
-                        className="p-8 sm:p-10 glass glass-hover rounded-xl group relative overflow-hidden"
+                        whileHover={{ y: -5, scale: 1.01 }}
+                        className="p-6 sm:p-8 glass glass-hover rounded-xl group relative overflow-hidden"
                       >
                          {/* Dynamic Glow Layer */}
                          <div 
@@ -841,9 +940,9 @@ export default function App() {
                          />
                          
                          <div className="relative z-10 flex flex-col items-center">
-                            <div className="relative mb-8 p-1">
+                            <div className="relative mb-6 p-1">
                                <div 
-                                 className="w-12 h-12 md:w-16 md:h-16 bg-brand-cyan transition-all duration-500 group-hover:bg-white group-hover:scale-110"
+                                 className="w-10 h-10 md:w-12 md:h-12 bg-brand-cyan transition-all duration-500 group-hover:bg-white group-hover:scale-110"
                                  style={{
                                    maskImage: `url(${skill.logo})`,
                                    WebkitMaskImage: `url(${skill.logo})`,
@@ -855,24 +954,8 @@ export default function App() {
                                    WebkitMaskPosition: 'center'
                                  }}
                                />
-                               {/* Reflection Effect */}
-                               <div className="absolute top-[110%] left-0 right-0 h-10 pointer-events-none overflow-hidden opacity-10 group-hover:opacity-30 transition-opacity flex justify-center">
-                                  <div 
-                                    className="w-12 h-12 md:w-16 md:h-16 bg-brand-cyan blur-[2px] scale-y-[-1]"
-                                    style={{
-                                      maskImage: `url(${skill.logo})`,
-                                      WebkitMaskImage: `url(${skill.logo})`,
-                                      maskSize: 'contain',
-                                      WebkitMaskSize: 'contain',
-                                      maskRepeat: 'no-repeat',
-                                      WebkitMaskRepeat: 'no-repeat',
-                                      maskPosition: 'center',
-                                      WebkitMaskPosition: 'center'
-                                    }}
-                                  />
-                               </div>
                             </div>
-                            <span className="text-[9px] sm:text-[10px] font-bold uppercase tracking-[0.2em] text-white/40 group-hover:text-brand-cyan transition-colors duration-500">{skill.name}</span>
+                            <span className="text-[8px] sm:text-[9px] font-bold uppercase tracking-[0.15em] text-white/40 group-hover:text-brand-cyan transition-colors duration-500">{skill.name}</span>
                          </div>
                       </motion.div>
                     ))}
@@ -882,32 +965,25 @@ export default function App() {
 
             <Journey />
 
-            <section id="contact" className="py-24 md:py-40 px-6 sm:px-10 lg:px-20 relative overflow-hidden">
-              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-brand-cyan/5 rounded-full blur-[150px] pointer-events-none" />
+            <section id="contact" className="py-16 md:py-32 px-5 sm:px-10 lg:px-20 relative overflow-hidden">
+              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-brand-cyan/5 rounded-full blur-[120px] pointer-events-none" />
               <div className="max-w-[1400px] mx-auto text-center relative z-10">
-                 <span className="text-brand-cyan text-[10px] md:text-[11px] font-bold uppercase tracking-[0.4em] mb-8 block">Ready to collaborate?</span>
-                 <h2 className="text-5xl md:text-8xl lg:text-[10rem] font-bold text-white mb-16 leading-[0.9] uppercase tracking-tighter">LET'S BUILD <br /> SOMETHING <span className="text-gradient">ICONIC</span></h2>
-                 <div className="flex flex-wrap justify-center gap-6 sm:gap-8 md:gap-12 lg:gap-16">
+                 <span className="text-brand-cyan text-[9px] md:text-[10px] font-bold uppercase tracking-[0.4em] mb-6 block">Ready to collaborate?</span>
+                 <h2 className="text-4xl md:text-7xl lg:text-8xl font-bold text-white mb-12 leading-[0.9] uppercase tracking-tight">LET'S BUILD <br /> SOMETHING <span className="text-gradient">ICONIC</span></h2>
+                 <div className="flex flex-wrap justify-center gap-5 sm:gap-8 md:gap-12 lg:gap-16">
                    {SOCIAL_PLATFORMS.map((platform, idx) => (
                      <motion.a
                        key={idx}
                        href={platform.url}
                        target="_blank"
                        rel="noopener noreferrer"
-                       whileHover={{ scale: 1.1, y: -8 }}
-                       whileTap={{ scale: 0.95 }}
+                       whileHover={{ scale: 1.05, y: -5 }}
+                       whileTap={{ scale: 0.98 }}
                        className="relative group flex flex-col items-center"
                      >
-                        {/* Cinematic Glow Layer */}
-                        <div 
-                          className="absolute inset-0 opacity-0 group-hover:opacity-100 blur-3xl transition-opacity duration-700 rounded-full" 
-                          style={{ background: platform.glow }}
-                        />
-                        
-                        <div className="relative w-16 h-16 sm:w-20 sm:h-20 lg:w-24 lg:h-24 rounded-full glass border border-brand-cyan/20 flex items-center justify-center overflow-hidden transition-all duration-500 group-hover:border-brand-cyan/50 group-hover:bg-brand-cyan/10">
-                           {/* Official Icon masked with coffee color */}
+                        <div className="relative w-12 h-12 sm:w-16 sm:h-16 lg:w-20 lg:h-20 rounded-full glass border border-brand-cyan/20 flex items-center justify-center overflow-hidden transition-all duration-500 group-hover:border-brand-cyan/50 group-hover:bg-brand-cyan/10">
                            <div 
-                             className="w-6 h-6 sm:w-8 sm:h-8 lg:w-10 lg:h-10 bg-brand-cyan transition-all duration-500 group-hover:scale-110 group-hover:bg-white"
+                             className="w-5 h-5 sm:w-6 sm:h-6 lg:w-8 lg:h-8 bg-brand-cyan transition-all duration-500 group-hover:scale-110 group-hover:bg-white"
                              style={{
                                maskImage: `url(${platform.logo})`,
                                WebkitMaskImage: `url(${platform.logo})`,
@@ -919,26 +995,9 @@ export default function App() {
                                WebkitMaskPosition: 'center'
                              }}
                            />
-                           
-                           {/* Subtle Reflection with mask */}
-                           <div className="absolute top-[80%] left-0 right-0 h-full pointer-events-none opacity-20 group-hover:opacity-40 transition-opacity flex justify-center">
-                              <div 
-                                className="w-8 h-8 sm:w-10 sm:h-10 bg-brand-cyan blur-[2px] scale-y-[-1]"
-                                style={{
-                                  maskImage: `url(${platform.logo})`,
-                                  WebkitMaskImage: `url(${platform.logo})`,
-                                  maskSize: 'contain',
-                                  WebkitMaskSize: 'contain',
-                                  maskRepeat: 'no-repeat',
-                                  WebkitMaskRepeat: 'no-repeat',
-                                  maskPosition: 'center',
-                                  WebkitMaskPosition: 'center'
-                                }}
-                              />
-                           </div>
                         </div>
                         
-                        <span className="mt-4 text-[9px] md:text-[10px] font-bold uppercase tracking-[0.3em] text-white/30 group-hover:text-brand-cyan transition-colors duration-500">
+                        <span className="mt-3 text-[8px] md:text-[9px] font-bold uppercase tracking-[0.2em] text-white/30 group-hover:text-brand-cyan transition-colors duration-500">
                            {platform.name}
                         </span>
                      </motion.a>
